@@ -1,0 +1,5 @@
+[
+  {"brand": "Nike", "productName": "shoes", "productDescription": "white color", "productPrice": 1256.50, "categoryId": "sport", "subCategoryId": "running",
+    "stock": 22
+  }
+]

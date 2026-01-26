@@ -1,0 +1,8 @@
+username,password,expected
+standard_user,secret_sauce,pass
+locked_out_user,secret_sauce,fail
+standard_user,wrong_password,fail
+problem_user,secret_sauce,fail
+performance_glitch_user,secret_sauce,fail
+error_user,secret_sauce,fail
+visual_user,secret_sauce,pass

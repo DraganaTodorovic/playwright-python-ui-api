@@ -1,0 +1,7 @@
+
+[
+  {"name": "milos", "job": "qa"},
+  {"name": "michael", "job": "manager"},
+  {"name": "tom", "job": "leader"},
+  {"name": "john", "job": "developer"}
+]
