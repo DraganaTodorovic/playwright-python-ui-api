@@ -1,0 +1,23 @@
+# Node dependencies
+node_modules/
+
+# Playwright test results and reports
+reports/
+test_results/
+
+# VSCode settings
+.vscode/
+
+# OS/Editor files
+.DS_Store
+Thumbs.db
+
+# Playwright artifacts
+*.log
+*.zip
+*.webm
+*.png
+*.mp4
+
+# Misc
+.env
