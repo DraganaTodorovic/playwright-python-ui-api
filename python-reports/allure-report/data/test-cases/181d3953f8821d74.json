@@ -1,0 +1,120 @@
+{
+  "uid" : "181d3953f8821d74",
+  "name" : "test_create_user[data1]",
+  "fullName" : "tests.api.test_api_users#test_create_user",
+  "historyId" : "adcf114fdb268f92d8ebfb719c9dcca8",
+  "time" : {
+    "start" : 1769460570698,
+    "stop" : 1769460571425,
+    "duration" : 727
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1769460569290,
+      "stop" : 1769460569290,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1769460569290,
+      "stop" : 1769460569290,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "pytestconfig",
+    "time" : {
+      "start" : 1769460569291,
+      "stop" : 1769460569291,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "delete_output_dir",
+    "time" : {
+      "start" : 1769460569291,
+      "stop" : 1769460569291,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.api"
+  }, {
+    "name" : "suite",
+    "value" : "test_api_users"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-AU9UV80"
+  }, {
+    "name" : "thread",
+    "value" : "14812-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.api.test_api_users"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'name': 'michael', 'job': 'manager'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "181d3953f8821d74.json",
+  "parameterValues" : [ "{'name': 'michael', 'job': 'manager'}" ]
+}
