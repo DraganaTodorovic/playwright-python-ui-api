@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: write
+  actions: write
+  id-token: write
+
 jobs:
   python-tests:
     runs-on: ubuntu-latest
