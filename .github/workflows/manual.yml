@@ -25,7 +25,6 @@ jobs:
           python -m playwright install --with-deps
 #          pip install pytest playwright allure-pytest
 
-
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
