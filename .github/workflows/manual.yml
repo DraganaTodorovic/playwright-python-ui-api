@@ -60,6 +60,7 @@ jobs:
 #          name: allure-report
 #          path: python-reports/allure-report
 
+
       # 👉 Deploy na gh-pages
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
