@@ -80,7 +80,6 @@ jobs:
       - name: Run tests
         run: |
           pytest \
-          --env=${{ github.event.input.environment || 'dev'}} \
           -n 4 \
           --html=python-reports/report.html --alluredir=python-reports/allure-results
 
