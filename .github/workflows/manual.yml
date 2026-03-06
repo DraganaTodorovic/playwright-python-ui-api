@@ -25,6 +25,11 @@ permissions:
 jobs:
   python-tests:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox]
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -59,7 +64,11 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest ./tests -n auto --html=python-reports/report.html --alluredir=python-reports/allure-results
+          pytest \
+          --browser=${{ matrix.browser }} \
+          --env=${{ github.event.input.environment || 'dev'}} \
+          -n 4 \
+          --html=python-reports/report.html --alluredir=python-reports/allure-results
 
       - name: Generate Allure Report
         run: |
