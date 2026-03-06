@@ -30,8 +30,8 @@ jobs:
 #      matrix:
 #        browser: [chromium, firefox]
 
-    container:
-      image: mcr.microsoft.com/playwright/python:v1.41.2-jammy
+#    container:
+#      image: mcr.microsoft.com/playwright/python:v1.41.2-jammy
 
     steps:
       - name: Checkout repo
