@@ -16,6 +16,8 @@ on:
           - dev
           - stage
           - prod
+  schedule:
+    - cron: '0 2 * * 6,0'   # weekend u 02:00 UTC
 
 permissions:
   contents: write
@@ -78,9 +80,17 @@ jobs:
            sudo ln -s /opt/allure/bin/allure /usr/bin/allure              
 
       - name: Run tests
+        if: github.event_name != 'schedule'
         run: |
           pytest \
           -n 4 \
+          --html=python-reports/report.html --alluredir=python-reports/allure-results
+
+      - name: Run tests - Nightly regression
+        if: github.event_name == 'schedule'
+        run: |
+          pytest \
+          -n auto \
           --html=python-reports/report.html --alluredir=python-reports/allure-results
 
 #        run: |

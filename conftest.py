@@ -5,6 +5,29 @@ from playwright.sync_api import sync_playwright
 from utils.logger import get_logger
 from utils.config_reader import get_config
 
+
+# ===============================================
+# CONFIG VALUES FOR ENVIRONMENT - GitHub Actions
+# ===============================================
+def pytest_addoption(parser):
+    parser.addoption(
+        "--env",
+        action="store",
+        default="dev",
+        help="Environment to run tests against"
+    )
+
+
+@pytest.fixture(scope="session")
+def env(request):
+    return request.config.getoption("--env")
+
+
+# ==========================================
+# CONFIG VALUES
+# ==========================================
+
+
 # ==========================================
 # CONFIG VALUES
 # ==========================================
@@ -90,7 +113,7 @@ def page(playwright_instance, request, logger, browser_name):
     # browser = playwright_instance.
     context = browser.new_context(record_video_dir=videos_dir if VIDEO else None)
     page = context.new_page()
-
+    
     # Timeout settings
     page.set_default_timeout(TIMEOUT)
     page.set_default_navigation_timeout(TIMEOUT)
